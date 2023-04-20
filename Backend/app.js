@@ -72,9 +72,9 @@ app.post('/postoffer', async(req, res) => {
     res.status(200).send("Datenbank akt.");
 });
 
-//app.delelte für löschen
+//app.delelte zum Löschen
 
-//app.put zum aktualisieren
+//app.put zum Aktualisieren
 
 app.listen(port, () => {
     console.log(`Server is running on Port ${port}`);
