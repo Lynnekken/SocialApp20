@@ -9,10 +9,10 @@ const port = process.env.Port;
 app.use(cors());
 app.use(express.json());
 
-const Database = "kat-net";
+const database = "kat-net";
 
 app.use(async function (req, res, next) {
-    await mongoose.connect(`${process.env.Connection}${Database}?retryWrites=true&w=majority`)
+    await mongoose.connect(`${process.env.Connection}${database}?retryWrites=true&w=majority`)
     next();
 });
 
