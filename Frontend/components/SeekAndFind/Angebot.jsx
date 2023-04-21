@@ -1,7 +1,8 @@
 import React from "react";
 import Input from "../Input/Input";
 import InputDropdownR from "../Input/InputDropdownR";
-import Heading from "../Heading/Heading";
+import Heading from "../Generic components/Heading/Heading";
+import Submitbutton from "../Generic components/button/Submittbutton";
 
 const Angebot = () => {
 
@@ -15,6 +16,7 @@ const Angebot = () => {
         <Input name={"Angebot:"}/>
         <Input name={"E-Mail/Telefon:"} placeholder={"Geben Sie hier Ihre bevorzugte Anrt der Kontaktaufnahme an."}/>
         <Input name={"Beschreibung:"} placeholder={"Beschreiben Sie hier präzise, was Sie anbieten."}/>
+        <Submitbutton/>
       </div>
     )
   }
