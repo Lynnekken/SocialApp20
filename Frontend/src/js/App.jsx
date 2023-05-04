@@ -1,28 +1,18 @@
-//Components
-
-import Gesuche from '../Components/SeekAndFind/Gesuche'
-import Angebot from '../Components/SeekAndFind/Angebot'
-import Login from '../../components/login/login'
-import Register from '../../components/register/Register'
-import Profile from '../../components/profile/Profile'
-
-
-//CSS
-import '../scss/App.css'
-import '../scss/index.css'
+import About from "./components/About"
+import Navbar from "./components/Navbar"
+import Request from "./components/Request"
+import Offer from "./components/Offer"
 
 function App() {
 
-  return (
-    <div className="App">
 
-      <Gesuche/>
-      <Angebot/>
-      <Login emailLabel={"Email"} emailPlaceholder={"Email Adress"} passwordLabel={"Password"} passwordPlaceholder={"Password"} submitButtonText={"Submit"}/>
-      <Register firstNameLabel={"First Name"} firstNamePlaceholder={"First Name"} lastNameLabel={"Last Name"} lastNamePlaceholder={"Last Name"} emailLabel={"Email"} emailPlaceholder={"Email Adress"} passwordLabel={"Password"} passwordPlaceholder={"Password"} submitButtonText={"Submit"}/>
-      <Profile />
-    </div>
-  );
+  return (
+    <>
+    <Navbar/>
+    <Offer/>
+    <About/>
+    </>
+  )
 }
 
 export default App
