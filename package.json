@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^8.0.1"
+    "concurrently": "^8.0.1",
+    "link": "^1.5.1",
+    "react-router-dom": "^6.11.1"
   }
 }

@@ -3,10 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Request from "./Request";
-import Offer from "./Offer";
-
-
 
 const Navbar = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -27,17 +23,18 @@ const Navbar = () => {
 
 
   return (
+    <>
     <div onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} style={navbarBrandStyle}>
 <nav className="navbar navbar-expand-sm bg-body-tertiary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">KatNet</a>
+    <Link to="../components/Home.jsx" className="navbar-brand">Home</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" ></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <a className="nav-link active" aria-current="page" href="#">About Us</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Profile</a>
@@ -61,6 +58,7 @@ const Navbar = () => {
   </div>
 </nav>
 </div>
+</>
   );
 }
 

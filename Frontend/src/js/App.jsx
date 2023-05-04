@@ -1,18 +1,15 @@
-import About from "./components/About"
-import Navbar from "./components/Navbar"
-import Request from "./components/Request"
-import Offer from "./components/Offer"
+import React from "react";
+import Navbar from "../../components/Navbar";
+import Home from "../../components/Home";
+import AboutUs from "../../components/AboutUs";
+import Offer from "../../components/Offer";
+import Request from "../../components/Request";
+import Profile from "../../components/Profile";
 
 function App() {
-
-
   return (
-    <>
-    <Navbar/>
-    <Offer/>
-    <About/>
-    </>
-  )
+  <Navbar/>
+  );
 }
 
-export default App
+export default App;
