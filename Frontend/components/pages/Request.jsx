@@ -1,6 +1,6 @@
 import React from 'react'
-import Input from './GenericComponents/Input'
-import Heading from './GenericComponents/Heading'
+import Input from '../GenericComponents/Input'
+import Heading from '../GenericComponents/Heading'
 
 const Request = () => {
   

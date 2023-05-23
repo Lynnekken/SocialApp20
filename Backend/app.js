@@ -11,26 +11,26 @@ app.use(express.json());
 
 const database = "kat-net";
 
-app.use(async function (req, res, next) {
-    await mongoose.connect(`${process.env.Connection}${database}?retryWrites=true&w=majority`)
-    next();
-});
+// app.use(async function (req, res, next) {
+//     await mongoose.connect(`${process.env.Connection}${database}?retryWrites=true&w=majority`)
+//     next();
+// });
 
-const userSchema = new mongoose.Schema({
-    firstname: String,
-    lastname: String,
-    email: String,
-    passwort: String,
-    job: String,
-    region: String,
-    skills: String,
-    equipment: String,
-    radius: Number,
-    available: String,
-    contact: String
-});
+// const userSchema = new mongoose.Schema({
+//     firstname: String,
+//     lastname: String,
+//     email: String,
+//     passwort: String,
+//     job: String,
+//     region: String,
+//     skills: String,
+//     equipment: String,
+//     radius: Number,
+//     available: String,
+//     contact: String
+// });
 
-const User = mongoose.model('user', userSchema);
+// const User = mongoose.model('user', userSchema);
 
 
 const seekorfindSchema = new mongoose.Schema({
